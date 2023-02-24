@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "checked::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-checked-Debug-04b5f2950ba608400636.json",
+					"name" : "checked",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "just3c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-just3c-Debug-53db57bb09d8dd672839.json",
+					"name" : "just3c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manual::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manual-Debug-98cbe7ddb49e65b9ea32.json",
+					"name" : "manual",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "original::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-original-Debug-04ba5dd670164e5bc659.json",
+					"name" : "original",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supercharger/Flex-C/Merge_Sort/cmake-build-debug",
+		"source" : "/home/supercharger/Flex-C/Merge_Sort"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
