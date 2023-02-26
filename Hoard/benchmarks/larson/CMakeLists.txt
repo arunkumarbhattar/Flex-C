@@ -4,8 +4,8 @@ cmake_minimum_required(VERSION 3.5)
 set(TARGETS larson larson-hoard)
 
 # Add the source files for the targets
-add_executable(larson larson.cpp)
-add_executable(larson-hoard larson.cpp)
+add_executable(larson larson.cpp ../../src/source/libhoard.cpp)
+add_executable(larson-hoard larson.cpp ../../src/Heap-Layers/wrappers/wrapper.cpp)
 
 # Set the compiler and its flags
 set(CMAKE_CXX_COMPILER g++)

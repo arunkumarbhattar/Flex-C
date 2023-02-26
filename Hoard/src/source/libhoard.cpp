@@ -69,7 +69,9 @@ volatile bool anyThreadCreated = false;
 
 
 /// Maintain a single instance of the main Hoard heap.
-
+namespace HL {
+    int simpleVal = 0;
+}
 Hoard::HoardHeapType * getMainHoardHeap() {
   // This function is C++ magic that ensures that the heap is
   // initialized before its first use. First, allocate a static buffer
@@ -100,6 +102,8 @@ extern "C" {
 #endif
   {
     if (isCustomHeapInitialized()) {
+        HL::MmapWrapper::setSimpleVal(99);
+        printf("HL::MmapWrapper::simpleVal = %d", HL::MmapWrapper::getSimpleVal());
       void * ptr = getCustomHeap()->malloc (sz);
       if (ptr == nullptr) {
 	fprintf(stderr, "INTERNAL FAILURE.\n");
@@ -136,7 +140,8 @@ extern "C" {
   }
 
   bool xxIsHoardPtrValid(void * ptr) {
-    getCustomHeap()->isValidHoardPtr(ptr);
+    //getCustomHeap()->isValidHoard(ptr);
+    return true;
   }
  
 #if defined(__GNUG__)
